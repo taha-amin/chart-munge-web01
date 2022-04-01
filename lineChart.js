@@ -21,6 +21,7 @@ const config = {
     options: {}
 };
 
+// eslint-disable-next-line
 const myChart = new Chart(
     document.getElementById('myChart2'),
     config
