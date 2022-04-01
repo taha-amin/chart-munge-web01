@@ -25,3 +25,5 @@ const myChart = new Chart(
     document.getElementById('myChart2'),
     config
 );
+
+console.log(makeCoolFactorCountMap(customers));

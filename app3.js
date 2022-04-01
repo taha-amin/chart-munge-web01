@@ -9,7 +9,7 @@ const data = {
     labels: labels,
     datasets: [{
         label: '# of customers by each gender',
-        backgroundColor: ['beige', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'red'],
+        backgroundColor: ['black', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'red'],
         borderColor: 'rgb(255, 99, 132)',
         data: Object.values(countMap3),
     }]
@@ -25,3 +25,5 @@ const myChart = new Chart(
     document.getElementById('myChart3'),
     config
 );
+
+console.log(genderData(customers));
