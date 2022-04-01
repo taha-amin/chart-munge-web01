@@ -21,10 +21,9 @@ test('takes in customer data and returns number of customers by each purchase fr
     // Set up your arguments and expectations
     const expected = countMap;
     
-    
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = makePurchaseFrequencyCountMap();
+    const actual = makePurchaseFrequencyCountMap(customers);
 
     //Expect
     // Make assertions about what is expected versus the actual result
