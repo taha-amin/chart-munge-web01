@@ -1,5 +1,7 @@
 import { customers } from './data.js';
-import { makepurchaseFrequencyCountMap } from './data-utils.js';
+import { makePurchaseFrequencyCountMap } from './data-utils.js';
+
+const countMap = makePurchaseFrequencyCountMap(customers);
 
 const labels = Object.keys(countMap);
 
