@@ -26,4 +26,4 @@ const myChart = new Chart(
     config
 );
 
-console.log(makePurchaseFrequencyCountMap(customers));
+//console.log(makePurchaseFrequencyCountMap(customers));

@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
-import { makePurchaseFrequencyCountMap, makeCoolFactorCountMap } from '../data-utils.js';
+import { makePurchaseFrequencyCountMap, makeCoolFactorCountMap, genderData } from '../data-utils.js';
 import { customers } from '../data.js';
 
 const test = QUnit.test;
@@ -41,8 +41,7 @@ test('takes in customer data and returns number of customers by each cool factor
         7: 101,
         8: 99,
         9: 82,
-        10: 95  
-
+        10: 95 
     };
 
     //Arrange
@@ -52,6 +51,31 @@ test('takes in customer data and returns number of customers by each cool factor
     //Act
     //Call the function you're testing and set the result to a const
     const actual = makeCoolFactorCountMap(customers);
+
+    //Expect
+    //Make assertions about what is expected versus the actual result
+    expect.deepEqual(actual, expected);
+});
+
+test('takes in customer data and returns number of customers by each gender', (expect) => {
+    const countMap3 = {
+        'Agender': 17,
+        'Bigender': 14,
+        'Female': 457,
+        'Genderfluid': 18,
+        'Genderqueer': 11,
+        'Male': 448,
+        'Non-binary': 24,
+        'Polygender': 11
+    };
+
+    //Arrange
+    //Set up your arguments and expectations
+    const expected = countMap3;
+
+    //Act
+    //Call the function you're testing and set the result to a const
+    const actual = genderData(customers);
 
     //Expect
     //Make assertions about what is expected versus the actual result

@@ -26,4 +26,4 @@ const myChart = new Chart(
     config
 );
 
-console.log(makeCoolFactorCountMap(customers));
+//console.log(makeCoolFactorCountMap(customers));
