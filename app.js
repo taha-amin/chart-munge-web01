@@ -1,13 +1,7 @@
 import { customers } from './data.js';
+import { makepurchaseFrequencyCountMap } from './data-utils.js';
 
-const labels = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-];
+const labels = Object.keys(countMap);
 
 const data = {
     labels: labels,
