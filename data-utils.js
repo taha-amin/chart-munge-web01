@@ -1,6 +1,6 @@
 import { customers } from './data.js';
 
-function makePurchaseFrequencyCountMap() {
+export function makePurchaseFrequencyCountMap() {
     const countMap = {};
 
     for (let customer of customers) {
@@ -12,4 +12,6 @@ function makePurchaseFrequencyCountMap() {
             countMap[frequency] = 1;
         }
     }
+
+    return countMap;
 }

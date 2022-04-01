@@ -1,5 +1,7 @@
 // IMPORT MODULES under test here:
 // import { example } from '../example.js';
+import { makePurchaseFrequencyCountMap } from '../data-utils.js';
+import { customers } from '../data.js';
 
 const test = QUnit.test;
 
