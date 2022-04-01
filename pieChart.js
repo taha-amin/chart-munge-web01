@@ -27,4 +27,4 @@ const myChart = new Chart(
     config
 );
 
-console.log(genderData(customers));
+//console.log(genderData(customers));
