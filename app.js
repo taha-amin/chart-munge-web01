@@ -1,5 +1,5 @@
 import { customers } from './data.js';
-import { makeCoolFactorCountMap, makePurchaseFrequencyCountMap } from './data-utils.js';
+import { genderData, makeCoolFactorCountMap, makePurchaseFrequencyCountMap } from './data-utils.js';
 
 const countMap = makePurchaseFrequencyCountMap(customers);
 
@@ -27,4 +27,5 @@ const myChart = new Chart(
 );
 
 //console.log(makePurchaseFrequencyCountMap(customers));
-console.log(makeCoolFactorCountMap(customers));
+//console.log(makeCoolFactorCountMap(customers));
+console.log(genderData(customers));

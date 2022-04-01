@@ -1,5 +1,6 @@
 import { customers } from './data.js';
 
+//bar chart showing # of customers by each purchase frequency
 export function makePurchaseFrequencyCountMap() {
     const countMap = {};
 
@@ -16,6 +17,7 @@ export function makePurchaseFrequencyCountMap() {
     return countMap;
 }
 
+//Line chart showing # of customers by each cool factor
 export function makeCoolFactorCountMap() {
     const countMap2 = {};
 
@@ -30,4 +32,21 @@ export function makeCoolFactorCountMap() {
     }
 
     return countMap2;
+}
+
+//Pie chart showing # of customers by each gender
+export function genderData() {
+    const countMap3 = {};
+
+    for (let customer of customers) {
+        const gender = customer.gender;
+
+        if (countMap3[gender]) {
+            countMap3[gender]++;
+        } else {
+            countMap3[gender] = 1;
+        }
+    }
+
+    return countMap3;
 }
